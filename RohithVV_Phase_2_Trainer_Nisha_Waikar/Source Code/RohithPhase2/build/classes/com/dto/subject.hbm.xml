@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+       "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+       
+<hibernate-mapping package="com.dto">
+    <class name="Subject" table="subjects">
+        <id name="subID" column="SubjectID">
+            <generator class="increment"></generator>  
+        </id>
+        <property name="subName" type="string" column="Subject_name"/>
+        <property name="classID" type="int" />
+    	<property name="tID" type="int" column="TeacherID"/>
+    </class>
+    
+</hibernate-mapping>

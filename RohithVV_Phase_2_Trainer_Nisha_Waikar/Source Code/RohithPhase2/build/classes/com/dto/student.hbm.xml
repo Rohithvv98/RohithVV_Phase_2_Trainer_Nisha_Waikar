@@ -1,0 +1,15 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+       "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+       
+<hibernate-mapping package="com.dto">
+    <class name="Student" table="students">
+        <id name="stID" column="StudentID">
+            <generator class="increment"></generator>  
+        </id>
+        <property name="StName" type="string" column="Student_name"/>
+        <property name="classID" type="int" />
+    </class>
+    
+</hibernate-mapping>
